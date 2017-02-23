@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:theme="@android:style/Theme.DeviceDefault.Light.DarkActionBar"
+    android:paddingTop="0dp"
+    tools:context="com.example.panchamkhaitan.svfitness.AddAttendance">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/firstName"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="StudentName" />
+
+            <Button
+                android:id="@+id/presentButton"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Present"
+                android:layout_below="@+id/absentButton"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/absentButton"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Absent"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/presentButton" />
+
+
+        </RelativeLayout>
+</RelativeLayout>
